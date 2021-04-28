@@ -1,13 +1,344 @@
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
 code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
+}
+#home {
+  height: 100vh;
+  display: flex;
+  flex-direction: row;
+}
+#welcome {
+  font-family: "Bungee Shade", cursive;
+  font-size: x-large;
+  box-sizing: border-box;
+  padding-top: 10%;
+  padding-left: 10%;
+  width: 50%;
+}
+#welcome img {
+  width: 50%;
+}
+#firstText {
+  margin-bottom: -10%;
+  margin-left: -3%;
+}
+#SecondText {
+  margin-bottom: -10%;
+  margin-left: 1%;
+}
+#ThirdText {
+  margin-left: 6%;
+  margin-bottom: -1%;
+}
+#welcome button {
+  margin-left: 13%;
+  color: black;
+  background-color: rgb(48, 222, 253);
+  border: 1px solid black;
+  border-radius: 10px;
+  font-size: small;
+  width: 100px;
+  height: 40px;
+}
+#welcome button:hover {
+  color: crimson;
+}
+#Contact {
+  display: flex;
+}
+#Contact img {
+  margin-top: 1%;
+  border: 1px solid black;
+  margin-left: 2%;
+  border-radius: 10px;
+  width: 40%;
+  height: 90vh;
+}
+#Details {
+  display: flex;
+  flex-direction: column;
+  width: 60%;
+  box-sizing: border-box;
+  padding-left: 13%;
+  font-family: "Rum Raisin", sans-serif;
+  font-size: large;
+}
+#Intro {
+  margin-bottom: -2%;
+}
+#Self {
+  margin-bottom: -2%;
+}
+#FirstPoint {
+  position: absolute;
+  font-size: 40px;
+  top: 16.5%;
+  margin-left: -3%;
+}
+#SecondPoint {
+  position: absolute;
+  top: 27.5%;
+  font-size: 40px;
+  margin-left: -3%;
+}
+#ThirdPoint {
+  position: absolute;
+  font-size: 40px;
+  margin-left: -3%;
+  top: 39%;
+}
+
+#Link {
+  font-family: "Staatliches", cursive;
+  font-size: larger;
+  width: 80%;
+  padding-top: 1%;
+  padding-left: 25%;
+  text-decoration: none;
+  margin-left: 30%;
+}
+#links {
+  text-decoration: none;
+  margin-right: 8%;
+}
+#Menu {
+  display: flex;
+  flex-direction: row;
+  box-sizing: border-box;
+  border-bottom: 1px solid black;
+  height: 9vh;
+}
+#cart {
+  margin-bottom: -1%;
+}
+#Part {
+  width: 5%;
+  display: flex;
+}
+#Menu h1 {
+  font-family: "Staatliches", cursive;
+  margin-top: -0.01%;
+  margin-left: 2%;
+}
+#About {
+  margin-top: 3%;
+  margin-bottom: 0.5%;
+  margin-left: 19%;
+}
+#Buttons {
+  margin-top: 30%;
+  margin-left: -20%;
+}
+#Buttons a {
+  margin-top: 1%;
+  margin-right: 2%;
+}
+#github {
+  margin-left: 1%;
+}
+#Product {
+  display: flex;
+  flex-direction: row;
+}
+#Filter {
+  display: flex;
+  flex-direction: column;
+  padding-top: 5%;
+  width: 15%;
+  border: 1px solid black;
+  height: 90vh;
+}
+#FilterButton {
+  margin-left: 45%;
+}
+#Filter h3 {
+  box-sizing: border-box;
+  padding-left: 15%;
+  height: 40px;
+  border: 1px solid black;
+}
+#price {
+  border-top: 0px;
+  border-left: 0px;
+  border-right: 0px;
+  border-bottom: 0px solid black;
+  font-size: larger;
+  height: 40px;
+  overflow: hidden;
+}
+#price button {
+  border-top: 1px solid black;
+  border-left: 0px;
+  border-right: 0px;
+  border-bottom: 1px solid black;
+  background-color: transparent;
+  margin-left: -1%;
+  padding-left: -1%;
+  width: 100%;
+  height: 41px;
+}
+#brand {
+  border-top: 0px;
+  border-left: 0px;
+  border-right: 0px;
+  border-bottom: 0px solid black;
+  font-size: larger;
+  height: 40px;
+  overflow: hidden;
+}
+#brand button {
+  border-top: 0px solid black;
+  border-left: 0px;
+  border-right: 0px;
+  border-bottom: 1px solid black;
+  background-color: transparent;
+  padding-left: -1%;
+  width: 100%;
+  height: 40px;
+}
+#category {
+  border-top: 0px;
+  border-left: 0px;
+  border-right: 0px;
+  border-bottom: 1px solid black;
+  font-size: larger;
+  height: 40px;
+  overflow: hidden;
+}
+#Category {
+  border: 0px;
+  background-color: transparent;
+  padding-left: -1%;
+  width: 100%;
+  height: 40px;
+}
+#category button {
+  border-top: 0px solid black;
+  border-left: 0px;
+  border-right: 0px;
+  border-bottom: 1px solid black;
+  background-color: transparent;
+  padding-left: -1%;
+  width: 100%;
+  height: 40px;
+}
+#Show {
+  border: 1px solid black;
+  width: 90%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+#Card {
+  border-radius: 10px;
+  margin-top: 2%;
+  margin-left: 8%;
+  width: 25%;
+  border: 1px solid black;
+  height: 52vh;
+  box-sizing: border-box;
+}
+#Cardbrand {
+  margin-left: 8%;
+}
+#CardName {
+  margin-left: 20%;
+}
+#CardPrice {
+  margin-left: 5%;
+}
+#Card img {
+  margin-top: 2%;
+  margin-left: 25%;
+  height: 25vh;
+}
+#ProductDisplay {
+  display: none;
+  flex-direction: row;
+  top: 11%;
+  left: 2%;
+  border-radius: 10px;
+  border: 1px solid black;
+  background-color: white;
+  position: absolute;
+  width: 95%;
+  height: 90vh;
+}
+#ProductDisplay img {
+  height: 70vh;
+  margin-top: 5%;
+  margin-left: 4%;
+}
+#ProductDetails {
+  display: flex;
+  flex-direction: column;
+  width: 80%;
+}
+#ProductDetails ul {
+  margin-left: 0.5%;
+}
+#Close {
+  border: 0px;
+  font-size: larger;
+  color: black;
+  margin-top: 0.5%;
+  background-color: transparent;
+  width: 5%;
+  margin-left: 95%;
+}
+#Close :active {
+  color: crimson;
+}
+#Quantity {
+  margin-top: -2%;
+  margin-left: 12%;
+  border-radius: 10px;
+  border: 1px solid black;
+  width: 3%;
+}
+#Title {
+  margin-left: 3%;
+}
+#Buy {
+  background-color: rgb(43, 255, 255);
+  font-size: larger;
+  border-radius: 10px;
+  border: 1px solid black;
+  width: 8%;
+  margin-top: 5%;
+  margin-left: 10%;
+}
+#Buy:hover {
+  color: crimson;
+}
+#HeadingOfProduct {
+  margin-left: 8%;
+  margin-bottom: 8%;
+}
+#Price {
+  margin-top: -2%;
+  margin-left: 5%;
+}
+#Apply {
+  background-color: rgb(43, 255, 255);
+  border-radius: 10px;
+  border: 1px solid black;
+  margin-top: 6%;
+  margin-left: 20%;
+  font-size: large;
+  font-family: "Staatliches", cursive;
+  width: 50%;
+  height: 7vh;
+}
+#Apply :hover {
+  color: crimson;
 }
