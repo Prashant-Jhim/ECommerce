@@ -10,10 +10,19 @@ let Product = () =>{
     let [price,Newprice] = useState(0)
     const [Brandarr,newbrand] = useState([])
     const initial = {type:'Push',name:'',brand:'',price:'',img:''}
-    const Data = useSelector((state)=>{return state})
+    const Data = useSelector((state)=>{return state.display})
+    const Qunt = useSelector((state)=>{return state.quantity})
     const dispatch = useDispatch()
     const [Prev,New] =useState('')
-    
+    const Items = {name:Data.name,price:Data.price,Quantity:Qunt.Count}
+    console.log(Items)
+    let BuyItems = () =>{
+    const Cont = {type:'Buy',arr:Items,amount:parseInt(Data.price*Qunt.Count)}
+    const Change = {type:'Add',Count:1}
+    dispatch(Cont)
+    dispatch(Change)
+
+    }
 
     let ChangeInPrice = (event) =>{
         var button = event.target.id
@@ -32,6 +41,7 @@ let Product = () =>{
     }
     let Close = () =>{
         document.getElementById('ProductDisplay').style.display = 'none'
+        document.getElementById('Quantity').value = 1
         dispatch(initial)
         
     }
@@ -131,7 +141,7 @@ let Product = () =>{
         <button id ='Close' onClick = {Close}>X</button>
         <h1 id = 'HeadingOfProduct'>{Data.name}</h1>
         <h2 id = 'Price'>Price - ${Data.price}</h2>
-        <label id = 'Title'>Quantity</label><input id = 'Quantity' type="number" name="quantity" min="1" max="600000" placeholder = '1'></input>
+        <label id = 'Title'>Quantity</label><input id = 'Quantity' type="number" name="quantity" min="1" max="600000" placeholder = '1' onChange ={(event)=>{dispatch({type:'Add',Count:event.target.value})}}></input>
         <ul>
         <li>6.1-inch (15.5 cm diagonal) Liquid Retina HD LCD display</li>
         <li>Water and dust resistant (2 meters for up to 30 minutes, IP68)</li>
@@ -140,7 +150,7 @@ let Product = () =>{
         <li>Face ID for secure authentication</li>
         <li>Fast-charge capable</li>
         </ul>
-        <Button id = 'Buy'>Buy</Button>
+        <Button id = 'Buy' onClick = {()=>{BuyItems()}}>Buy</Button>
         </div>
         </div>
         </div>
