@@ -2,12 +2,16 @@ import React from 'react'
 import InstagramIcon from '@material-ui/icons/Instagram';
 import FacebookIcon from '@material-ui/icons/Facebook';
 import GitHubIcon from '@material-ui/icons/GitHub';
+import {Link} from 'react-router-dom'
 
 let Contact = () =>{
     const GitHub = 'https://github.com/Prashant-Jhim'
     const Facebook = 'https://www.facebook.com/prashant.jhim.5?hc_ref=ARRwYu5x032FY_3r0qowjaOvQ21WaBsjrNNIYSRLCe0-9pVPQ3w49dZ3ZwFRxVS1bMY'
     const Instagram= 'https://www.instagram.com/prashant_jhim/'
     const Img = 'https://instagram.fluh2-1.fna.fbcdn.net/v/t51.2885-15/e35/130274043_2468136796824648_7517640838861927620_n.jpg?tp=1&_nc_ht=instagram.fluh2-1.fna.fbcdn.net&_nc_cat=100&_nc_ohc=v9cXM1N9NysAX9YDeBN&edm=AP_V10EAAAAA&ccb=7-4&oh=fe95105e073add081fabed602ee80544&oe=608C89FD&_nc_sid=4f375e'
+    let Close1 = () =>{
+        document.getElementById('Link1').style.display = 'none'
+    }
     return (
         <div id = 'Contact'>
         <img src = {Img}/>
@@ -22,6 +26,12 @@ let Contact = () =>{
         <h2 id = 'ThirdPoint'>*</h2>
         <h2>Currently Learning Front-End</h2>
         <h2 id = 'Buttons'>Contact Me - <a href={Instagram} target = '_blank'><InstagramIcon/></a> <a href={Facebook} target = '_blank'><FacebookIcon/></a><a id = 'github' href = {GitHub} target = '_blank'><GitHubIcon/></a></h2>
+        </div>
+        <div id = 'Link1'>
+        <button id = 'CloseButton' onClick = {Close1}>X</button>
+        <Link id = 'Part1' to = '/' onClick = {Close1}>Home</Link>
+        <Link  id = 'Part2'  to = '/Product' onClick = {Close1}>Products</Link>
+        <Link  id = 'Part3' to = '/Contact' onClick = {Close1}>Contact</Link>
         </div>
         </div>
     )

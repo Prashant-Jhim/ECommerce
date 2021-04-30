@@ -11,6 +11,12 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
 }
+div#welcome {
+  order: 2;
+}
+div#home img {
+  order: 1;
+}
 #home {
   height: 100vh;
   display: flex;
@@ -31,6 +37,9 @@ code {
   margin-bottom: -10%;
   margin-left: -3%;
 }
+#Link1 {
+  display: none;
+}
 #SecondText {
   margin-bottom: -10%;
   margin-left: 1%;
@@ -49,11 +58,23 @@ code {
   width: 100px;
   height: 40px;
 }
+#link2 {
+  display: none;
+}
 #welcome button:hover {
   color: crimson;
 }
 #Contact {
   display: flex;
+}
+#Link1 {
+  display: none;
+}
+#menubutton {
+  display: none;
+}
+#Filter2 {
+  display: none;
 }
 #Contact img {
   margin-top: 1%;
@@ -110,9 +131,15 @@ code {
   text-decoration: none;
   margin-right: 8%;
 }
+#FilterButton {
+  display: none;
+}
 #links {
   text-decoration: none;
   margin-right: 8%;
+}
+#ProductDisplay ul {
+  font-size: medium;
 }
 #Menu {
   display: flex;
@@ -243,6 +270,7 @@ code {
   flex-wrap: wrap;
 }
 #Card {
+  font-size: small;
   border-radius: 10px;
   margin-top: 2%;
   margin-left: 8%;
@@ -277,6 +305,9 @@ code {
   width: 95%;
   height: 90vh;
 }
+#ShowCart {
+  font-size: medium;
+}
 #ProductDisplay img {
   height: 70vh;
   margin-top: 5%;
@@ -285,7 +316,7 @@ code {
 #ProductDetails {
   display: flex;
   flex-direction: column;
-  width: 80%;
+  width: 90%;
 }
 #ProductDetails ul {
   margin-left: 0.5%;
@@ -393,6 +424,447 @@ code {
   border-radius: 10px;
   background-color: rgb(0, 195, 255);
 }
+#links2 {
+  display: none;
+}
 #TotalAmount {
   margin-left: 37%;
+}
+@media screen and (max-width: 1221px) {
+  div#welcome {
+    order: 2;
+  }
+  div#home img {
+    order: 1;
+  }
+  #Card {
+    font-size: small;
+    border-radius: 10px;
+    margin-top: 2%;
+    margin-left: 2%;
+    width: 25%;
+    border: 1px solid black;
+    height: 52vh;
+    box-sizing: border-box;
+  }
+  #Card img {
+    margin-left: 9%;
+  }
+  #home img {
+    width: 50%;
+  }
+  #welcome {
+    width: 40%;
+    font-size: 25px;
+  }
+  #firstText {
+    margin-left: -15%;
+    margin-right: 0px;
+  }
+  #SecondText {
+    margin-left: -8%;
+    margin-right: 0px;
+  }
+  #ThirdText {
+    margin-left: -4%;
+    margin-right: 0px;
+  }
+  #ShowCart {
+    font-size: medium;
+  }
+}
+@media screen and (max-width: 1117px) {
+  #ProductDisplay {
+    width: 90%;
+  }
+  #welcome {
+    margin-top: 7%;
+    font-size: medium;
+  }
+  #welcome button {
+    margin-left: 5%;
+  }
+  #Quantity {
+    margin-top: -5.4%;
+    margin-left: 20%;
+  }
+  #Contact img {
+    margin-top: 5%;
+    width: 50%;
+    height: 70vh;
+  }
+}
+@media screen and (max-width: 899px) {
+  #Contact img {
+    margin-top: 10%;
+    width: 50%;
+    height: 50vh;
+  }
+  #ProductDisplay {
+    width: 90%;
+  }
+  #home img {
+    margin-top: 10%;
+    width: 40%;
+    height: 50vh;
+  }
+  #Card {
+    width: 30%;
+  }
+  #Quantity {
+    margin-top: -7.4%;
+    margin-left: 29%;
+  }
+}
+@media screen and (max-width: 798px) {
+  #Contact img {
+    margin-top: 10%;
+    width: 50%;
+    height: 50vh;
+  }
+  #Quantity {
+    margin-top: -9%;
+    width: 15%;
+    margin-left: 40%;
+  }
+  #ProductDisplay ul {
+    font-size: small;
+  }
+  #ProductDisplay {
+    width: 90%;
+  }
+}
+@media screen and (max-width: 990px) {
+  #ProductDisplay {
+    width: 90%;
+  }
+  #Close {
+    margin-left: 90%;
+  }
+  #welcome {
+    font-size: larger;
+  }
+  #Card {
+    font-size: small;
+  }
+  #ShowCart {
+    font-size: medium;
+  }
+}
+@media screen and (max-width: 912px) {
+  #ProductDisplay {
+    width: 90%;
+  }
+  #Link {
+    padding-left: 16%;
+  }
+  #Card img {
+    width: 60%;
+    height: 19vh;
+  }
+  div#welcome {
+    order: 2;
+  }
+  div#home img {
+    order: 1;
+  }
+  #home img {
+    width: 50%;
+  }
+  #home {
+    display: flex;
+    flex-direction: row;
+  }
+  #welcome {
+    width: 50%;
+  }
+  #ShowCart {
+    font-size: medium;
+  }
+}
+@media screen and (max-width: 778px) {
+  #ProductDisplay {
+    width: 90%;
+  }
+  #Link {
+    padding-left: 4%;
+  }
+  #home {
+    font-size: small;
+  }
+  #ShowCart {
+    font-size: medium;
+  }
+  #home button {
+    margin-left: 2%;
+  }
+  #home img {
+    margin-top: 10%;
+    width: 50%;
+    height: 70vh;
+  }
+}
+@media screen and (max-width: 806px) {
+  #ProductDisplay {
+    width: 90%;
+  }
+}
+@media screen and (max-width: 614px) {
+  #home img {
+    margin-top: 20%;
+    width: 50%;
+    height: 40vh;
+  }
+  #Link {
+    width: 55%;
+    margin-left: 17%;
+    padding-left: 0%;
+    padding-right: 0%;
+  }
+  #Close {
+    margin-left: 85%;
+  }
+  #ProductDisplay ul {
+    font-size: x-small;
+  }
+}
+@media screen and (max-width: 411px) {
+  #Link {
+    display: none;
+  }
+  #menubutton {
+    display: block;
+    font-size: large;
+    background-color: transparent;
+    border: 0px;
+    margin-top: 3%;
+    margin-left: 56%;
+    height: 5vh;
+  }
+  #Part1 {
+    text-decoration: none;
+    border: 1px solid black;
+    width: 100%;
+    padding-left: 30%;
+    margin-bottom: 1px;
+  }
+  #Part2 {
+    text-decoration: none;
+    border: 1px solid black;
+    width: 100%;
+    padding-left: 30%;
+    margin-bottom: 1px;
+  }
+  #Part3 {
+    text-decoration: none;
+    border: 1px solid black;
+    width: 100%;
+    padding-left: 30%;
+    margin-bottom: 1px;
+  }
+  #CloseButton {
+    background-color: transparent;
+    border: 0px;
+    font-size: larger;
+    position: absolute;
+    top: 0;
+    right: 4%;
+    width: 10%;
+  }
+  #Link1 {
+    overflow: hidden;
+    display: none;
+    padding-top: 20%;
+    font-size: xx-large;
+    background-color: white;
+    width: 100%;
+    height: 100vh;
+    border: 1px solid black;
+    position: absolute;
+    flex-direction: column;
+  }
+  #Menu {
+    border-bottom: 1px solid black;
+    width: 100%;
+  }
+  #Menu h1 {
+    margin-top: 2%;
+  }
+  #link2 {
+    display: block;
+    text-decoration: none;
+    font-size: x-large;
+    margin-left: -65%;
+    margin-top: 3%;
+  }
+  #home {
+    display: flex;
+    flex-direction: column;
+  }
+  #home img {
+    width: 100%;
+  }
+  #welcome {
+    margin-left: 25%;
+    width: 100%;
+    font-size: medium;
+  }
+  #Product {
+    display: flex;
+    flex-direction: column;
+  }
+  #Filter {
+    display: none;
+  }
+  #FilterButton {
+    display: block;
+    height: 8vh;
+    width: 20%;
+    margin-left: 80%;
+    background-color: transparent;
+    border: 0px;
+    font-size: large;
+  }
+  #Filter2 {
+    background-color: white;
+    width: 100%;
+    padding-top: 40%;
+    height: 100vh;
+    display: none;
+    flex-direction: column;
+    position: absolute;
+  }
+  #Show {
+    width: 100%;
+  }
+  #Card {
+    margin-left: 0;
+    width: 48%;
+  }
+  #prices {
+    border-top: 0px;
+    border-left: 0px;
+    border-right: 0px;
+    border-bottom: 0px solid black;
+    font-size: larger;
+    height: 40px;
+    overflow: hidden;
+  }
+  #prices button {
+    border-top: 1px solid black;
+    border-left: 0px;
+    border-right: 0px;
+    border-bottom: 1px solid black;
+    background-color: transparent;
+    margin-left: -1%;
+    padding-left: -1%;
+    width: 100%;
+    height: 41px;
+  }
+  #brands {
+    border-top: 0px;
+    border-left: 0px;
+    border-right: 0px;
+    border-bottom: 0px solid black;
+    font-size: larger;
+    height: 40px;
+    overflow: hidden;
+  }
+  #brands button {
+    border-top: 0px solid black;
+    border-left: 0px;
+    border-right: 0px;
+    border-bottom: 1px solid black;
+    background-color: transparent;
+    padding-left: -1%;
+    width: 100%;
+    height: 40px;
+  }
+  #categorys {
+    border-top: 0px;
+    border-left: 0px;
+    border-right: 0px;
+    border-bottom: 1px solid black;
+    font-size: larger;
+    height: 40px;
+    overflow: hidden;
+  }
+  #Categorys {
+    border: 0px;
+    background-color: transparent;
+    padding-left: -1%;
+    width: 100%;
+    height: 40px;
+  }
+  #categorys button {
+    border-top: 0px solid black;
+    border-left: 0px;
+    border-right: 0px;
+    border-bottom: 1px solid black;
+    background-color: transparent;
+    padding-left: -1%;
+    width: 100%;
+    height: 40px;
+  }
+  #Contact {
+    display: flex;
+    flex-direction: column;
+  }
+  #Contact img {
+    width: 95%;
+  }
+  #FirstPoint {
+    display: none;
+  }
+  #SecondPoint {
+    display: none;
+  }
+  #ThirdPoint {
+    display: none;
+  }
+  #ProductDisplay {
+    width: 95%;
+    display: none;
+    flex-direction: column;
+  }
+  #ProductDisplay img {
+    margin-left: 30%;
+    width: 30%;
+    height: 20vh;
+  }
+  #Details {
+    width: 95%;
+  }
+  #Buttons {
+    margin-left: 6%;
+    width: 95%;
+  }
+  #TotalAmount {
+    margin-left: 25%;
+  }
+  #CartName {
+    box-sizing: border-box;
+    padding-left: 2%;
+  }
+  #Close {
+    margin-top: 0%;
+  }
+  #CartQuantity {
+    width: 25%;
+  }
+  #CartPrice {
+    box-sizing: border-box;
+    padding-left: 2%;
+    width: 22%;
+    margin-right: 0;
+  }
+  #CardDetails {
+    margin-top: -8%;
+    width: 100%;
+  }
+  #Cart {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+  }
 }

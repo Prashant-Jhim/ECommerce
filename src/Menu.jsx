@@ -5,6 +5,9 @@ import StoreMallDirectoryOutlinedIcon from '@material-ui/icons/StoreMallDirector
 import ShoppingCartOutlinedIcon from '@material-ui/icons/ShoppingCartOutlined';
 let Menu = () =>{
     const No =  useSelector(state => state.buy.arr.length)
+    let Disp = () =>{
+        document.getElementById('Link1').style.display = 'flex'
+    }
     return(
         <div id = 'Menu'>
         <h1>Store</h1>
@@ -14,6 +17,11 @@ let Menu = () =>{
         <Link  id = 'links' to = '/Contact'>Contact-Us</Link>
         <Link id = 'links' to = '/Cart'><ShoppingCartOutlinedIcon id = 'cart'/>{No}</Link>
         </div>
+        
+        <button id = 'menubutton' onClick = {Disp}>Menu</button>
+        
+        
+        <Link id = 'link2' to = '/Cart'><ShoppingCartOutlinedIcon id = 'cart'/>{No}</Link>
         </div>
     )
 }
